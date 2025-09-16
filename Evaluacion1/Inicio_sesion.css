@@ -1,0 +1,81 @@
+body{
+    background-color: blueviolet;
+    
+}
+
+
+body .formulario{
+    justify-content: center;
+}
+
+nav{
+    background-color: #3133be;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav .h{
+    text-align: left;
+    font-family: 'arial', sans-serif;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+nav .carrito {
+    position: relative;
+    width: 40px;       
+    height: 40px;      
+    cursor: pointer;
+}
+
+nav .carrito img {
+    width: 100%; 
+    height: 100%;  
+    object-fit: contain;
+    display: block;
+}
+
+nav .carrito #contadorCarrito {
+    position: absolute;
+    top: -8px;   
+    right: -5px; 
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+
+nav a {
+    padding: 6px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.formulario{
+    max-width: 24rem;        
+    width: 100%;
+    background-color: white;  
+    padding: 1.5rem;          
+    border-radius: 0.5rem;    
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+    margin-bottom: 2rem;   
+    justify-content: center;
+}
+
+button{
+    background-color: #3133be;
+    border-radius: 5px;
+
+}

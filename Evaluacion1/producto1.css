@@ -1,0 +1,137 @@
+body{
+    background-color: blueviolet;
+    
+}
+
+nav{
+    background-color: #3133be;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.destacados{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    min-height: 50vh;
+    background-color: rgb(26, 150, 150);
+    flex-wrap: wrap;
+    padding: 6px;
+    margin-bottom: 20px;
+}
+
+nav .h{
+    text-align: left;
+    font-family: 'arial', sans-serif;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+nav .carrito {
+    position: relative;
+    width: 40px;       
+    height: 40px;      
+    cursor: pointer;
+}
+
+nav .carrito img {
+    width: 100%;   /* se ajusta al tamaño del contenedor */
+    height: 100%;  
+    object-fit: contain;
+    display: block;
+}
+
+nav .carrito #contadorCarrito {
+    position: absolute;
+    top: -8px;   /* ajusta posición vertical */
+    right: -5px; /* ajusta posición horizontal */
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+
+nav a {
+    padding: 6px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.cajas{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    min-height: 50vh;
+    background-color: rgb(26, 150, 150);
+    flex-wrap: wrap;
+    padding: 6px;
+}
+
+.caja1 {
+    background-color: coral;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.caja1 .titulo {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caja1 .contenido {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.caja1 .contenido img {
+    max-width: 40%;
+    max-height: 200px;  /* imagen a la izquierda */
+    height: auto;
+    border-radius: 5px;
+}
+
+.caja1 .descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caja1 .descripcion p {
+    margin: 0 0 10px 0;
+}
+
+.caja1 .descripcion button {
+    padding: 8px 12px;
+    background-color: #3133be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+

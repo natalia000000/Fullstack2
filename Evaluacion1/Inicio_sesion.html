@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--tailwind-->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link link rel="stylesheet" href="Inicio_sesion.css">
+
+
     <title>Document</title>
 </head>
-<body class="Inicio_sesion">
+<body>
 
     <nav class="">
-    hola
+    Urban Élite
     <!--Enlaces-->
         <div class="">
-            <a href="detalles.html" class="">Productos</a>
+            <a href="index.html" class="">Inicio</a>
             <a href="Inicio_sesion.html" class="">Inicio de sesion</a>
-            <a href="Inicio_sesion.html" class="">Productos destacados</a>
+            <a href="Inicio_sesion.html" class="">Productos</a>
+        </div>
+        <div class="carrito" onclick="window.location.href='carrito.html'">
+            <img src="img/carrito.webp" alt="Carrito">
+            <span id="contadorCarrito">0</span>
         </div>
     </nav>
 
-    <div class="">
+    <div class="formulario">
         <form id="Enviarformulario" action="#">
             <h4>Inicio de sesion</h4>
             <div>
@@ -39,10 +44,11 @@
                 
                 <br>
 
-                <button class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition" onclick="Enviarformulario()">Ingresar</button>
+                <button onclick="Enviarformulario()">Ingresar</button>
             </div>
         </form>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>

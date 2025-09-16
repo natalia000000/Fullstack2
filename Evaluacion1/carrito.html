@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- mismo CSS que index -->
+    <title>Carrito</title>
+</head>
+<body>
+    <nav>
+        <h2 class="h">Urban Élite</h2>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Inicio_sesion.html">Inicio de sesión</a>
+            <a href="productos.html">Productos</a>
+        </div>
+        <div class="carrito" onclick="window.location.href='carrito.html'">
+            <img src="img/carrito.webp" alt="Carrito">
+            <span id="contadorCarrito">0</span>
+        </div>
+    </nav>
+
+    <section class="cajas" id="contenedorCarrito">
+        <!-- Los productos del carrito se generarán aquí -->
+    </section>
+
+    <div style="text-align:center; margin:20px;">
+        <button id="vaciarCarrito">Vaciar Carrito</button>
+        <button id="comprarCarrito">Comprar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

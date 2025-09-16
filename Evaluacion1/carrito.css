@@ -1,0 +1,117 @@
+/* BODY */
+body {
+    background-color: blueviolet;
+    font-family: 'Arial', sans-serif;
+
+}
+
+/* NAV */
+nav {
+    background-color: #3133be;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav .h {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav .menu a:hover {
+    color: #ffcc00;
+}
+
+nav .carrito {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+nav .carrito img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+nav .carrito #contadorCarrito {
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* MAIN */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* TÍTULO */
+main h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* LISTA DEL CARRITO */
+#carrito {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#carrito li {
+    background-color: coral;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 15px;
+}
+#carrito li img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+/* BOTÓN VACÍAR */
+#vaciarCarrito {
+    padding: 10px 20px;
+    background-color: #3133be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#vaciarCarrito:hover {
+    background-color: #1a1fc1;
+    transform: scale(1.05);
+}
